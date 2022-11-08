@@ -5,7 +5,7 @@
     grid-template-rows: auto;
     grid-gap: 10px;
     grid-template-areas: 
-    
+
     "gallery-p gallery-p gallery-p gallery-p"
     "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
     "img1 img2 img3 img4"
@@ -19,8 +19,9 @@
     background-size: cover;
     background-position: center;
     cursor: pointer;
-
 }
+
+
 
 /* images */
 #index-gallery p {
@@ -79,7 +80,7 @@
 
     .gallery-img a {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
@@ -90,3 +91,66 @@
         transition: all ease-in-out 100ms;
        
     }
+
+
+
+/*Popup window*/
+.img-window{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-window img{
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+/*Next image*/
+.img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.img-btn-next:hover {
+    opacity: 0.8;
+}
+
+
+
+.img-btn-prev {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.img-btn-prev:hover {
+    opacity: 0.8;
+}
+
+
